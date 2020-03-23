@@ -1,0 +1,15 @@
+﻿<h1>Login</h1>
+
+<hr />
+
+<form asp-controller="Seguranca" asp-action="Login" method="post">
+    <input type="hidden" name="requestpath" id="requestpath" value="@ViewBag.RequestPath" />
+    <label for="male">Usuário :</label>
+    <input type="text" name="usuario" id="usuario" /><br />
+    <label for="male">Senha :</label>
+    <input type="password" name="senha" id="senha" /><br />
+
+    <input type="submit" value="Login" />
+</form>
+
+
